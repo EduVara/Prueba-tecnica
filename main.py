@@ -1,16 +1,13 @@
-# This is a sample Python script.
+from mercado import Mercado
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    mercado = Mercado()
+    mercado.empezar_mercado()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print(f"{'Agente':<15} | {'Balance ($)':>12} | {'Tarjetas':>9}")
+    print("-" * 42)
+    for agente in mercado.agentes:
+        print(f"{agente.tipo:<15} | {agente.balance:12.2f} | {agente.tarjetas:9d}")
+    print("-" * 42)
+    print(f"Precio final de las tarjetas gráficas{mercado.precio_actual:12.2f}")
+    print(f"{'Precio final de las tarjetas gráficas:':} ${mercado.precio_actual:,.2f}")
