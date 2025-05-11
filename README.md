@@ -20,6 +20,7 @@ El objetivo es ver cómo evoluciona el precio cuando estos agentes interactúan 
 
 ## ▶️ Cómo ejecutar
 
-1. Tener Python 3 instalado.
-2. Ejecutar el archivo `main.py`
-3. En la consola de comandos se podrá ver el resultado del programa
+1. Tener Python 3 instalado
+2. Clonar el repositorio
+3. Ejecutar el archivo `main.py`
+4. En la consola de comandos se podrá ver el resultado del programa
